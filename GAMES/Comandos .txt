@@ -1,0 +1,33 @@
+FIVEM
+
+ignoreDifferentVideoCard
+
+pedLodBias 0.2
+
+vehicleLodBias 0.2
+
+tessellation 0
+
+noquattransform
+
+noInGameDOF
+
+multiSample 1
+
+disableHyperthreading
+
+RUST
+
+assetwarmup 0
+
+-----
+
+iex((New-Object System.Net.WebClient).DownloadString('https://git.io/debloat'))
+
+
+
+Get-MpPreference | Select ScanAvgCPULoadFactor
+
+Set-MpPreference -ScanAvgCPULoadFactor 20
+
+gpupdate /force
